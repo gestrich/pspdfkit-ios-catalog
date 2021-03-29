@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -256,7 +256,7 @@
 		59D770D325515DE20079CAD2 /* LockedAnnotationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D770D225515DE20079CAD2 /* LockedAnnotationsExample.swift */; };
 		59D77198255438E20079CAD2 /* PSCLockedAnnotationsExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D77197255438E10079CAD2 /* PSCLockedAnnotationsExample.m */; };
 		68C74D8923EEFDAA00084BEF /* FaceRedactionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C74D8823EEFDA900084BEF /* FaceRedactionExample.swift */; };
-		6F23D8F536891956E434F9F6 /* PSPDFKitOCR in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCC7DDBD7E1617DFB27CA3A /* PSPDFKitOCR */; productRef = 8E888E71D18F6F62C94E2C6B /* SwiftPackageProductDependency */; };
+		6F23D8F536891956E434F9F6 /* PSPDFKitOCR in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCC7DDBD7E1617DFB27CA3A /* PSPDFKitOCR */; productRef = 8E888E71D18F6F62C94E2C6B /* PSPDFKitOCR */; };
 		780C6530252F466800BFEAA0 /* StreamingDocumentExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C652F252F466800BFEAA0 /* StreamingDocumentExample.swift */; };
 		782ADD03250D01A500130BD0 /* SwiftUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ADD02250D01A500130BD0 /* SwiftUIHelper.swift */; };
 		782ADD12250D02A400130BD0 /* SwiftUISettingsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ADD11250D02A400130BD0 /* SwiftUISettingsExample.swift */; };
@@ -321,20 +321,20 @@
 		84F644F52549FE560043E20E /* PSCComparisonExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F644F32549FE550043E20E /* PSCComparisonExample.m */; };
 		84F644FD2549FEAB0043E20E /* ReaderViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F644FC2549FEAB0043E20E /* ReaderViewExample.swift */; };
 		9224716DA990955AD11704E3 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 95314FF2F07EEAF29D765EFF /* Samples */; };
-		98C2DC05BBE2828EA12A64FA /* Instant in Frameworks */ = {isa = PBXBuildFile; fileRef = 7335DC8DE03B556157B89012 /* Instant */; productRef = 1AA32608F4B0C707FF2E4785 /* SwiftPackageProductDependency */; };
+		98C2DC05BBE2828EA12A64FA /* Instant in Frameworks */ = {isa = PBXBuildFile; fileRef = 7335DC8DE03B556157B89012 /* Instant */; productRef = 1AA32608F4B0C707FF2E4785 /* Instant */; };
 		A50D59612493E13A00A693F3 /* AssetName+ExpressibleByStringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D59602493E13A00A693F3 /* AssetName+ExpressibleByStringLiteral.swift */; };
 		AC39062825BE87B2008F0DEC /* MultimediaExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC39061C25BE87B2008F0DEC /* MultimediaExample.swift */; };
 		AC39067D25BE8F1A008F0DEC /* ScrubberBarWithButtonsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC39067125BE8F1A008F0DEC /* ScrubberBarWithButtonsExample.swift */; };
 		AC4F964E239613C00037395A /* PSCAddingCustomViewsExample.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4F9646239613C00037395A /* PSCAddingCustomViewsExample.m */; };
 		AC6BCE31246E6171005208D1 /* OfficeDocumentConversionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6BCE30246E6170005208D1 /* OfficeDocumentConversionExample.swift */; };
 		AC76EB3E251B02EB0084AA00 /* RemovePasswordExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76EB32251B02EA0084AA00 /* RemovePasswordExample.swift */; };
-		B54BA5F3EC4288C8DB9FAFCF /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		B54BA5F3EC4288C8DB9FAFCF /* (null) in Resources */ = {isa = PBXBuildFile; };
 		D2F5F6332590F1EA00DC7FD5 /* MoreInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F5F6322590F1EA00DC7FD5 /* MoreInfoCoordinator.swift */; };
 		D2F5F6432591000100DC7FD5 /* IndustryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F5F6422591000100DC7FD5 /* IndustryExample.swift */; };
-		E059D6845D21DE8C5E0FD6CC /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		E059D6845D21DE8C5E0FD6CC /* (null) in Resources */ = {isa = PBXBuildFile; };
 		F7055AEE24CA1E77005CEB0F /* SpreadMeasurementsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7055AED24CA1E77005CEB0F /* SpreadMeasurementsExample.swift */; };
 		F7055AF024CA264B005CEB0F /* MeasurementStoreImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7055AEF24CA264B005CEB0F /* MeasurementStoreImplementation.swift */; };
-		F7D038E4B6B6EBB0627B33CE /* PSPDFKit in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FE3C729D7BF4FA76C19899 /* PSPDFKit */; productRef = 57B86F23E8CDC80E10E29C01 /* SwiftPackageProductDependency */; };
+		F7D038E4B6B6EBB0627B33CE /* PSPDFKit in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FE3C729D7BF4FA76C19899 /* PSPDFKit */; productRef = 57B86F23E8CDC80E10E29C01 /* PSPDFKit */; };
 		F86A68D02434C296004668E2 /* PeepholeObscureAnnotationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A68C82434C295004668E2 /* PeepholeObscureAnnotationsExample.swift */; };
 		F86A68EB2435F5F0004668E2 /* ElearningExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A68EA2435F5F0004668E2 /* ElearningExample.swift */; };
 		F87EB0CB238EBF6400073DE5 /* CustomFontSizeButtonsFreeTextAccessoryViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87EB0C3238EBF6400073DE5 /* CustomFontSizeButtonsFreeTextAccessoryViewExample.swift */; };
@@ -672,7 +672,7 @@
 		59D77197255438E10079CAD2 /* PSCLockedAnnotationsExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCLockedAnnotationsExample.m; sourceTree = "<group>"; };
 		6569F0161D2D1DB400413194 /* Catalog-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Catalog-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C74D8823EEFDA900084BEF /* FaceRedactionExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRedactionExample.swift; sourceTree = "<group>"; };
-		7335DC8DE03B556157B89012 /* Instant */ = {isa = PBXFileReference; includeInIndex = 1; path = Instant; sourceTree = SOURCE_ROOT; };
+		7335DC8DE03B556157B89012 /* Instant */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Instant; sourceTree = SOURCE_ROOT; };
 		780C652F252F466800BFEAA0 /* StreamingDocumentExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingDocumentExample.swift; sourceTree = "<group>"; };
 		782ADD02250D01A500130BD0 /* SwiftUIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHelper.swift; sourceTree = "<group>"; };
 		782ADD11250D02A400130BD0 /* SwiftUISettingsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISettingsExample.swift; sourceTree = "<group>"; };
@@ -749,7 +749,7 @@
 		84F644F22549FE550043E20E /* ComparisonExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonExample.swift; sourceTree = "<group>"; };
 		84F644F32549FE550043E20E /* PSCComparisonExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCComparisonExample.m; sourceTree = "<group>"; };
 		84F644FC2549FEAB0043E20E /* ReaderViewExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderViewExample.swift; sourceTree = "<group>"; };
-		95314FF2F07EEAF29D765EFF /* Samples */ = {isa = PBXFileReference; includeInIndex = 1; path = Samples; sourceTree = "<group>"; };
+		95314FF2F07EEAF29D765EFF /* Samples */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
 		A50D59602493E13A00A693F3 /* AssetName+ExpressibleByStringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AssetName+ExpressibleByStringLiteral.swift"; sourceTree = "<group>"; };
 		A5AE9BE423E9CD8E0056E9DB /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A5AE9BE523E9CD970056E9DB /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -759,10 +759,10 @@
 		AC4F9646239613C00037395A /* PSCAddingCustomViewsExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCAddingCustomViewsExample.m; sourceTree = "<group>"; };
 		AC6BCE30246E6170005208D1 /* OfficeDocumentConversionExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeDocumentConversionExample.swift; sourceTree = "<group>"; };
 		AC76EB32251B02EA0084AA00 /* RemovePasswordExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemovePasswordExample.swift; sourceTree = "<group>"; };
-		B1FE3C729D7BF4FA76C19899 /* PSPDFKit */ = {isa = PBXFileReference; includeInIndex = 1; path = PSPDFKit; sourceTree = SOURCE_ROOT; };
+		B1FE3C729D7BF4FA76C19899 /* PSPDFKit */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = PSPDFKit; sourceTree = SOURCE_ROOT; };
 		D2F5F6322590F1EA00DC7FD5 /* MoreInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoCoordinator.swift; sourceTree = "<group>"; };
 		D2F5F6422591000100DC7FD5 /* IndustryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndustryExample.swift; sourceTree = "<group>"; };
-		EDCC7DDBD7E1617DFB27CA3A /* PSPDFKitOCR */ = {isa = PBXFileReference; includeInIndex = 1; path = PSPDFKitOCR; sourceTree = SOURCE_ROOT; };
+		EDCC7DDBD7E1617DFB27CA3A /* PSPDFKitOCR */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = PSPDFKitOCR; sourceTree = SOURCE_ROOT; };
 		F7055AED24CA1E77005CEB0F /* SpreadMeasurementsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadMeasurementsExample.swift; sourceTree = "<group>"; };
 		F7055AEF24CA264B005CEB0F /* MeasurementStoreImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementStoreImplementation.swift; sourceTree = "<group>"; };
 		F7F846702285B3E700A4DC72 /* Catalog-Profiling.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Catalog-Profiling.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1560,25 +1560,9 @@
 				LastUpgradeCheck = 9999;
 				ORGANIZATIONNAME = "PSPDFKit GmbH";
 				TargetAttributes = {
-					3A8E585423871D5D005F1FDB = {
-						CreatedOnToolsVersion = 11.2;
-						LastSwiftMigration = 1200;
-					};
-					6569F0151D2D1DB400413194 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1200;
-						TestTargetID = 7891D8EF1AF249D2004F9A86;
-					};
 					7891D8EF1AF249D2004F9A86 = {
 						LastSwiftMigration = 1200;
 						ProvisioningStyle = Automatic;
-					};
-					F7F8466F2285B3E700A4DC72 = {
-						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = 4YCRL5LW7Q;
-						LastSwiftMigration = 1200;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 7891D8EF1AF249D2004F9A86;
 					};
 				};
 			};
@@ -1623,9 +1607,9 @@
 			);
 			mainGroup = 784F010E15CF247900849F81;
 			packageReferences = (
-				CB098A3E1056669820AF3C35 /* RemoteSwiftPackageReference */,
-				CBD7A71FFFF15A688EBC074F /* RemoteSwiftPackageReference */,
-				71A4A7049C6EF0B5F33C59F3 /* RemoteSwiftPackageReference */,
+				CB098A3E1056669820AF3C35 /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */,
+				CBD7A71FFFF15A688EBC074F /* XCRemoteSwiftPackageReference "Instant-SP" */,
+				71A4A7049C6EF0B5F33C59F3 /* XCRemoteSwiftPackageReference "PSPDFKitOCR-SP" */,
 			);
 			productRefGroup = 784F011A15CF247900849F81 /* Products */;
 			projectDirPath = "";
@@ -1658,8 +1642,8 @@
 				3A21F4DF2375974900EA2C6B /* LaunchScreen.storyboard in Resources */,
 				3A21F5072375974900EA2C6B /* MainStoryboard.storyboard in Resources */,
 				3A21F4E12375974900EA2C6B /* Settings.bundle in Resources */,
-				B54BA5F3EC4288C8DB9FAFCF /* BuildFile in Resources */,
-				E059D6845D21DE8C5E0FD6CC /* BuildFile in Resources */,
+				B54BA5F3EC4288C8DB9FAFCF /* (null) in Resources */,
+				E059D6845D21DE8C5E0FD6CC /* (null) in Resources */,
 				9224716DA990955AD11704E3 /* Samples in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2157,8 +2141,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Catalog/Catalog-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2177,6 +2162,7 @@
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/Catalog/Catalog.entitlements";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5K844XFC6W;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2184,7 +2170,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Catalog/Catalog-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.catalog.dev;
 				PRODUCT_NAME = Catalog;
@@ -2210,7 +2199,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Catalog/Catalog-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.catalog.dev;
 				PRODUCT_NAME = Catalog;
@@ -2245,7 +2237,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		71A4A7049C6EF0B5F33C59F3 /* RemoteSwiftPackageReference */ = {
+		71A4A7049C6EF0B5F33C59F3 /* XCRemoteSwiftPackageReference "PSPDFKitOCR-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PSPDFKit/PSPDFKitOCR-SP.git";
 			requirement = {
@@ -2253,7 +2245,7 @@
 				kind = branch;
 			};
 		};
-		CB098A3E1056669820AF3C35 /* RemoteSwiftPackageReference */ = {
+		CB098A3E1056669820AF3C35 /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PSPDFKit/PSPDFKit-SP.git";
 			requirement = {
@@ -2261,7 +2253,7 @@
 				kind = branch;
 			};
 		};
-		CBD7A71FFFF15A688EBC074F /* RemoteSwiftPackageReference */ = {
+		CBD7A71FFFF15A688EBC074F /* XCRemoteSwiftPackageReference "Instant-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PSPDFKit/Instant-SP.git";
 			requirement = {
@@ -2272,19 +2264,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1AA32608F4B0C707FF2E4785 /* SwiftPackageProductDependency */ = {
+		1AA32608F4B0C707FF2E4785 /* Instant */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CBD7A71FFFF15A688EBC074F /* RemoteSwiftPackageReference */;
+			package = CBD7A71FFFF15A688EBC074F /* XCRemoteSwiftPackageReference "Instant-SP" */;
 			productName = Instant;
 		};
-		57B86F23E8CDC80E10E29C01 /* SwiftPackageProductDependency */ = {
+		57B86F23E8CDC80E10E29C01 /* PSPDFKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB098A3E1056669820AF3C35 /* RemoteSwiftPackageReference */;
+			package = CB098A3E1056669820AF3C35 /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */;
 			productName = PSPDFKit;
 		};
-		8E888E71D18F6F62C94E2C6B /* SwiftPackageProductDependency */ = {
+		8E888E71D18F6F62C94E2C6B /* PSPDFKitOCR */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 71A4A7049C6EF0B5F33C59F3 /* RemoteSwiftPackageReference */;
+			package = 71A4A7049C6EF0B5F33C59F3 /* XCRemoteSwiftPackageReference "PSPDFKitOCR-SP" */;
 			productName = PSPDFKitOCR;
 		};
 /* End XCSwiftPackageProductDependency section */

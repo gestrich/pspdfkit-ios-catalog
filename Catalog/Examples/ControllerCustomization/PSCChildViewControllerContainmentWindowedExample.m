@@ -58,8 +58,8 @@
 - (void)createPDFViewController {
     // configure the PSPDF controller
     self.pdfController = [[PSPDFViewController alloc] initWithDocument:self.document configuration:[PSPDFConfiguration configurationWithBuilder:^(PSPDFConfigurationBuilder *builder) {
-        builder.pageTransition = PSPDFPageTransitionScrollContinuous;
-        builder.scrollDirection = PSPDFScrollDirectionVertical;
+//        builder.pageTransition = PSPDFPageTransitionScrollContinuous;
+//        builder.scrollDirection = PSPDFScrollDirectionVertical;
         builder.shadowEnabled = NO;
         builder.doubleTapAction = PSPDFTapActionZoom;
         // Also blocks code that is responsible for showing the user interface.
@@ -73,6 +73,8 @@
 
     [self addChildViewController:self.pdfController];
     [self.pdfController didMoveToParentViewController:self];
+    self.view.autoresizingMask = UIViewAutoresizingNone;
+    self.view.clipsToBounds = YES;
     [self.view addSubview:self.pdfController.view];
 
     // As an example, here we're not using the UINavigationController but instead a custom UIToolbar.
@@ -99,29 +101,62 @@
     toolbar.items = toolbarItems;
     [self.view addSubview:toolbar];
     self.toolbar = toolbar;
+    
+
+//    UIAction *action = [UIAction actionWithHandler:^(__kindof UIAction * _Nonnull action) {
+//        NSLog(@"Action fired");
+//    }];
+    UIButton *toggleButton = [[UIButton alloc] initWithFrame:CGRectMake(25.0, 25.0, 125.0, 125.0)];
+    [toggleButton addTarget:self action:@selector(toggleFullScreen:) forControlEvents:UIControlEventTouchUpInside];
+    [toggleButton setTitle:@"Toggle" forState:UIControlStateNormal];
+    [toggleButton setBackgroundColor:UIColor.greenColor];
+    [self.view addSubview:toggleButton];
+    [self toggleFullScreen:nil];
 
     // Layout views using auto layout.
-    UIToolbar *statusBarBackgroundView = [UIToolbar new];
-    statusBarBackgroundView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:statusBarBackgroundView];
+//    UIToolbar *statusBarBackgroundView = [UIToolbar new];
+//    statusBarBackgroundView.translatesAutoresizingMaskIntoConstraints = NO;
+//    [self.view addSubview:statusBarBackgroundView];
+//
+//    UIView *pdfControllerView = self.pdfController.view;
+//    pdfControllerView.translatesAutoresizingMaskIntoConstraints = NO;
+//    toolbar.translatesAutoresizingMaskIntoConstraints = NO;
+//
+//    NSDictionary *bindings = NSDictionaryOfVariableBindings(pdfControllerView, toolbar, statusBarBackgroundView);
+//
+//    // Lyout PSPDFViewController.
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[pdfControllerView]-50-|" options:0 metrics:nil views:bindings]];
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[pdfControllerView]-50-|" options:0 metrics:nil views:bindings]];
+//    // Layout the toolbar.
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[statusBarBackgroundView]|" options:0 metrics:nil views:bindings]];
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[toolbar]|" options:0 metrics:nil views:bindings]];
+//    [self.view addConstraints:@[[statusBarBackgroundView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+//                                [statusBarBackgroundView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor],
+//                                [toolbar.topAnchor constraintEqualToAnchor:statusBarBackgroundView.bottomAnchor]
+//                                ]];
 
-    UIView *pdfControllerView = self.pdfController.view;
-    pdfControllerView.translatesAutoresizingMaskIntoConstraints = NO;
-    toolbar.translatesAutoresizingMaskIntoConstraints = NO;
+}
 
-    NSDictionary *bindings = NSDictionaryOfVariableBindings(pdfControllerView, toolbar, statusBarBackgroundView);
+-(void)toggleFullScreen:(UIButton *)button {
+    CGFloat shortWidth = 200.0;
+    CGFloat wideWidth = 400.0;
 
-    // Lyout PSPDFViewController.
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[pdfControllerView]-50-|" options:0 metrics:nil views:bindings]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[pdfControllerView]-50-|" options:0 metrics:nil views:bindings]];
-    // Layout the toolbar.
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[statusBarBackgroundView]|" options:0 metrics:nil views:bindings]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[toolbar]|" options:0 metrics:nil views:bindings]];
-    [self.view addConstraints:@[[statusBarBackgroundView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
-                                [statusBarBackgroundView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor],
-                                [toolbar.topAnchor constraintEqualToAnchor:statusBarBackgroundView.bottomAnchor]
-                                ]];
+    // Store the current view state.
+    PSPDFViewState *viewState = [self.pdfController viewState];
+    
+    NSAssert(viewState != nil, @"Missing viewState");
 
+    if(self.pdfController.view.frame.size.width == wideWidth){
+        self.pdfController.view.frame = CGRectMake(200.0, 0.0, shortWidth, shortWidth);
+    } else {
+        self.pdfController.view.frame = CGRectMake(200.0, 0.0, wideWidth, wideWidth);
+    }
+
+    [self.pdfController.view setNeedsLayout];
+    [self.pdfController.view layoutIfNeeded];
+
+    // Apply the saved view state from before the size change.
+    [self.pdfController applyViewState:viewState animateIfPossible:NO];
 }
 
 - (void)viewDidLoad {
@@ -166,3 +201,4 @@
 }
 
 @end
+
